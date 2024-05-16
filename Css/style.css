@@ -87,3 +87,55 @@ img{
         margin-left: 2rem;
     }
    }
+
+   .works{
+    display: flex;
+   }
+
+   .png{
+    width: 10rem;
+    height: 10rem;
+   }
+
+   
+/* footer */
+.joint{
+    text-align: center;
+    color: grey;
+ }
+ 
+ .footer-type{
+     text-decoration: none;
+     color: gray;
+ }
+ 
+ .footer-type:hover{
+     color: rgb(163, 159, 159);
+ }
+ 
+ .copywright{
+     margin-top: 1rem;
+ }
+     
+ @media only screen and (min-width: 1024px){
+     .joint{
+         display: flex;
+         justify-content: space-between;
+     }
+ 
+     .main-footer__links{
+         list-style-type: none;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 2rem;
+     }
+ 
+     .footer-type{
+         margin: 2rem;
+         text-decoration: none;
+     }
+ 
+     .copywright{
+         margin: 1.5rem;
+     }
+ }
