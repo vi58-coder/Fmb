@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root{
-    --navy: #061A4C;
+    --navy: #0a0441;
     --pitch: #ECE7D8;
     --white: #F6F6F3;
     --orange: #FF5700;
@@ -239,5 +239,53 @@ img{
 
     .name{
         margin-bottom: 1rem;
+    }
+}
+
+
+/* Selector */
+
+.selector{
+    background-color: var(--navy);
+    color: white;
+}
+
+.wrap{
+    padding: 4rem 2.5rem 4rem 2.5rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.selector__header{
+    text-align: center;
+}
+
+.reasons{
+    padding-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrap__heading{
+    color: var(--orange);
+}
+
+.overall{
+    padding-top: 3rem;
+}
+
+.align{
+    border-bottom: 1px solid white;
+    padding: 2rem 0 2rem 0;
+    line-height: 22px;
+}
+
+@media only screen and (min-width: 1024px){
+    .overall{
+        margin: 0 7rem 0 7rem;
+    }
+
+    .align{
+        padding-right: 35rem;
     }
 }
