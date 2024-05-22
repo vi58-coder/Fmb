@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root{
     --navy: #061A48;
-    --pitch: #F4C095;
+    --pitch: #ECE7DB;
     --white: #F6F6F3;
     --orange: #EE5719;
     --grey: rgb(253, 247, 247);
@@ -25,7 +25,8 @@ body{
 }
 
 .center{
-    margin: 2rem;
+    margin: 5rem 0rem 0 2rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,8 +67,9 @@ body{
     margin-top: 2rem;
 }
 
-img{
-    margin-top: rem;
+.body-image{
+    margin-top:;
+    width: 100%;
 
 }
 
@@ -100,10 +102,9 @@ img{
  /* footer */
  .joint{
     text-align: center;
-    background-color: lightblue;
-    padding: 1rem 1.5rem 3rem 1.5rem;
+    background-color: white;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     color: grey;
-    height: 50%;
  }
 
  .main-footer__links{
@@ -168,6 +169,7 @@ img{
  /* apply */
  .apply{
     text-align: center;
+    padding-bottom: 1rem;
  }
 
  .offer{
@@ -250,7 +252,7 @@ img{
 }
 
 .wrap{
-    padding: 4rem 2.5rem 4rem 2.5rem;
+    padding: 4rem 2.5rem;
     display: grid;
     gap: 2rem;
 }
@@ -258,36 +260,38 @@ img{
 .selector__header{
     text-align: center;
     color: var(--orange);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
+
+
 
 .reasons{
     padding-top: 1.5rem;
     font-size: 20px;
     font-weight: 600;
+    display: flex;
+    align-items: flex-start;
 }
 
-.wrap__heading{
-    color: var(--orange);
+.wrap-overall{
+    padding: 2rem 0;
 }
 
-.overall{
-    padding-top: 3rem;
-}
-
-.align{
+.round-up{
     border-bottom: 1px solid white;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem  0 2rem 0 ;
     line-height: 22px;
+    display: flex;
+    align-items: flex-start;
 }
 
 @media only screen and (min-width: 1024px){
-    .overall{
+    .wrap-overall{
         margin: 0 7rem 0 7rem;
     }
 
-    .align{
+    .round-up{
         padding-right: 35rem;
     }
 }
@@ -296,6 +300,7 @@ img{
 
 .container{
     background-color: var(--grey);
+    padding-top: 15rem;
 }
 
 .container__header{
@@ -411,6 +416,8 @@ span{
         padding: 1.5rem 3rem 1.5rem 3rem;
     }
 
+
+
     .overall{
         margin: 0 5rem 1.5rem 5rem;
     }
@@ -469,7 +476,7 @@ span{
 
 }
 
-
+/* Navabr */
 
 header{
     position: fixed;
@@ -480,8 +487,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
+    background-color:white ;
+    padding: 18px 12%;
     transition: all .50s ease;
 }
 
@@ -513,12 +520,12 @@ header{
     color: rgb(104, 104, 162);
 }
 
-.main{
+.resource{
     display: flex;
     align-items: center;
 }
 
-.main a{
+.resource a{
     margin-right: 25px;
     margin-left: 10px;
     color: var(--navy);
@@ -527,7 +534,7 @@ header{
     font-weight: 500;
 }
 
-.main a:hover{
+.resource a:hover{
     color: rgb(104, 104, 162);
 }
 
@@ -540,7 +547,7 @@ header{
 }
 
 .reg{
-    background-color: rgb(180, 170, 170);
+    background-color: rgb(231, 225, 225);
     padding: 12px;
     border-radius: 50px;
 }
@@ -592,6 +599,5 @@ header{
     .navbar.open{
         right: 2%;
     }
-
-    
+ 
 }
