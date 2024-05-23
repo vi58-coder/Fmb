@@ -56,7 +56,6 @@ body{
     font-weight: 700;
     border-radius: 3rem;
     cursor: pointer;
-    transition: background-color 1s ease;
 }
 
 .apply-button:hover {
@@ -511,7 +510,6 @@ header{
     text-decoration: none;
     padding: 5px 0;
     margin: 0px 30px;
-    transition: all .50s ease;
 
 }
 
@@ -535,7 +533,6 @@ header{
 
 .resource a:hover{
     color: var(--orange);
-    color: white;
 }
 
 .menu-icon{
