@@ -60,7 +60,7 @@ body{
 }
 
 .apply-button:hover {
-    background-color: darkorange;
+    background-color: var(--navy);
 }
 
 .right-content{
@@ -516,7 +516,7 @@ header{
 }
 
 .navbar a:hover{
-    color: rgb(104, 104, 162);
+    color: var(--orange);
 }
 
 .resource{
@@ -534,7 +534,8 @@ header{
 }
 
 .resource a:hover{
-    color: rgb(104, 104, 162);
+    color: var(--orange);
+    color: white;
 }
 
 .menu-icon{
@@ -549,6 +550,11 @@ header{
     background-color: rgb(231, 225, 225);
     padding: 12px;
     border-radius: 50px;
+}
+
+.reg:hover{
+    background-color: var(--orange);
+    color: white;
 }
 
 @media (max-width: 1280px){
