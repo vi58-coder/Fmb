@@ -14,6 +14,8 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-family: 'Raleway';
 }
@@ -172,11 +174,13 @@ body{
  /* apply */
  .apply{
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
  }
 
  .offer{
     color: var(--navy);
+    font-size: 1.5rem;
+    font-weight: 500;
     margin-top: 1.5rem;
  }
 
@@ -185,6 +189,10 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .apply{
+        padding: 3rem 0 3rem 0;
     }
 
     .offer{
@@ -247,47 +255,110 @@ body{
 }
 
 
-/* Selector */
+/* selector */
+.about {
+    background: var(--navy);
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
 
-.selector{
+ 
+
+  .selector__heading {
     background-color: var(--navy);
-    color: white;
-}
-
-.wrap{
-    padding: 4rem 2.5rem;
-    display: grid;
-    gap: 2rem;
-}
-
-.selector__header{
-    text-align: center;
     color: var(--orange);
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-
-
-.reasons{
-    padding-top: 1.5rem;
-    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .accordion {
+    width: 100%;
+    margin: 50px auto;
+    background: var(--navy);
+    padding: 2rem;
+    margin: 0;
+  }
+  
+  
+  .accordion input {
+    display: none;
+  }
+  
+  .accordion-label {
+    font-size: 1.6rem;
     font-weight: 600;
+    color: #fff;
     display: flex;
-    align-items: flex-start;
-}
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--navy);
+    cursor: pointer;
+  }
 
-.wrap-overall{
-    padding: 2rem 0;
-}
+  .accordion-label::after {
+    content: "+";
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  
+  .accordion-content {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    
+  }
 
-.round-up{
-    border-bottom: 1px solid white;
-    padding: 2rem  0 2rem 0 ;
-    line-height: 22px;
-    display: flex;
-    align-items: flex-start;
-}
+  .accordion__paragraph{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .accordion-label + .accordion-content{
+    border-bottom: 0.5px solid var(--white);
+    width: 100%;
+  }
+
+  input:checked + .accordion-label + .accordion-content {
+    max-height: 500px;
+    border-bottom: 0.5px solid var(--white);
+    width: 100%;
+  }
+  
+  input:checked + .accordion-label::after {
+    content: "_";
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .accordion-label {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .accordion-content {
+        width: 50%;
+    }
+
+    .selector__heading{
+        font-size: 35px;
+
+    }
+
+    .accordion__paragraph {
+        width: 60%;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+  }
+
 
 @media only screen and (min-width: 1024px){
     .wrap-overall{
@@ -296,6 +367,11 @@ body{
 
     .round-up{
         padding-right: 35rem;
+    }
+
+    .accordion{
+        max-width: 70rem;
+        margin: auto;
     }
 }
 
@@ -370,6 +446,14 @@ article{
     text-align: center;
 }
 
+.selector__header{
+    color: var(--orange);
+    font-size: 25px;
+    max-width: 70%;
+    padding-top: 2rem;
+    margin: auto;
+}
+
 .selector__bottom{
     line-height: 3rem;
     margin-bottom: 1.5rem;
@@ -377,6 +461,7 @@ article{
 
 .quote{
     line-height: 1.8rem;
+    padding-bottom: 4rem;
     
 }
 
@@ -495,6 +580,10 @@ header{
     transition: all .50s ease;
 }
 
+.none-display{
+    display: none;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -577,6 +666,16 @@ header{
     .menu-icon{
         display: block;
     }
+
+    .reg{
+        display: inline-block;
+        background-color: var(--pitch);
+    }
+
+    .reg:hover{
+        background-color: var(--pitch);
+        color: var(--orange);
+    }
     
     .navbar{
         position: absolute;
@@ -607,6 +706,11 @@ header{
 
     .navbar.open{
         right: 2%;
+    }
+
+    .fix,
+    .reg{
+      display: none;
     }
  
 }
